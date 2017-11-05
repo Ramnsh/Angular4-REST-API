@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+<hr/>
+<div class="row" *ngFor="let r of res | async">
+  <div class="col-sm-4">
+    <a href="#" class="btn btn-lg btn-block btn-primary">{{r.name}}</a>
+  </div>
+</div>
